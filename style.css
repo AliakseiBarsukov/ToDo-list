@@ -21,7 +21,8 @@ body {
 }
 
 @media (max-width:768px) {
-    .banner { text-align: center;
+    .banner { 
+        text-align: center;
     }
 }
 
@@ -42,18 +43,18 @@ body {
 }
 
 .todo__list {
-    margin:0;
+    margin: 0;
     padding: 0px;
 }
 
 li, 
 h3 {
-    list-style:none;
+    list-style: none;
 }
 
 input,
 button{
-    outline:none;
+    outline: none;
 }
 
 button {
@@ -81,7 +82,7 @@ label[for='new-task'] {
     text-transform: uppercase;
 }
 
-input[type="text"] {
+.todo__item-text {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -110,7 +111,7 @@ input
 }
 
 /* Task list */
-li, .todo__item {
+.todo__item, li {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
@@ -120,15 +121,15 @@ li, .todo__item {
     align-items: center;
 }
 
-li, .todo__item > * {
+li .todo__item > * {
     vertical-align: middle;
 }
 
-.todo__item-checkbox {
+.todo__item-checkbox, .checkbox {
     margin: 0 10px;
 }
 
-li > label {
+.todo__task, .task {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
@@ -136,18 +137,16 @@ li > label {
 }
 
 .todo__item-text {
-    width: 226px
+    width: 226px;
 }
 
-
-.delete img {
+.delete img, .todo__btn {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
 
-
-.delete img:hover {
+.delete img:hover ,.todo__btn:hover {
     transform: rotateZ(0);
 }
 
