@@ -139,14 +139,14 @@ li > label {
     width: 226px
 }
 
-button
+
 .delete img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
 
-button
+
 .delete img:hover {
     transform: rotateZ(0);
 }
